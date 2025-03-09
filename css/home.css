@@ -1,0 +1,247 @@
+:root {
+    --primary-color: rgb(0, 112, 244);
+    --primary-light: rgba(0, 112, 244, 0.1);
+    --primary-dark: rgb(0, 90, 200);
+    --white: #ffffff;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+
+
+.hero {
+    background-image: url('E:/Projects/Bookd/images/home-cover.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+@media (min-width: 1024px) {
+    .hero {
+        min-height: 850px;
+    }
+
+    .hero .container {
+        position: absolute;
+        top: 15rem;
+        left: 0;
+    }
+
+    .hero .container .row {
+        position: absolute;
+        left: 5px;
+    }
+
+    .hero::before {
+        background-color: rgba(0, 0, 0, 0.35);
+    }
+}
+
+
+
+.hero h1 {
+    color: var(--white);
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: var(--white);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 10px 25px;
+    font-weight: 600;
+}
+
+.hero .btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.hero .btn-outline-primary {
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.hero .btn-outline-primary:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+
+/* genre */
+
+.genre-section {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.section-title {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.book-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 30px;
+    height: 100%;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.book-img {
+    height: 200px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-img img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.book-info {
+    padding: 15px;
+    background-color: var(--white);
+}
+
+.book-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.book-price {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.view-more {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+/* About Us section */
+.about-section {
+    padding: 60px 0;
+    background-color: var(--primary-light);
+}
+
+.about-text {
+    margin-bottom: 30px;
+}
+
+.about-img {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: var(--white);
+    padding: 40px 0 20px;
+}
+
+.footer-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--white);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: var(--white);
+}
+
+.social-icons a {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.copyright {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
